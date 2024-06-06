@@ -36,9 +36,9 @@ console.log(transformString("Bello")); // The return code will be "66 101 108 10
 console.log(transformString("Hello")); // the output will be "72 101 108 108 111"
 
 // Test cases for divisible by 15
-console.log(transformString("Three Five Test")); // the output will be "116 115 101 84 32 101 118 105 70 32 101 101 114 104 84"
-console.log(transformString("Divisible by 15!")); // ouput "33 53 49 32 121 98 32 101 108 98 105 115 105 118 105 68"
-console.log(transformString("another one.... ")); // output "46 46 46 32 101 110 111 104 116 97 32 110 111 32 114 101 110 111 104 116 97"
+console.log(transformString("Divisible by 15")); // the output will be "53 49 32 121 98 32 101 108 98 105 115 105 118 105 68"
+console.log(transformString("second check!!!")); // ouptut "33 33 33 107 99 101 104 99 32 100 110 111 99 101 115"
+console.log(transformString("another one....")); // output "46 46 46 46 101 110 111 32 114 101 104 116 111 110 97"
 
 // Test cases for not divisible by 3 or 5
 console.log(transformString("Computer")); // this will not change "Computer"
