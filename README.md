@@ -24,7 +24,7 @@ In this challenge,
 
 
 ## How to run these challenges:
-- Clone this repository by *git clone https://github.com/irakozej/COA-TASKFORCE_take-home-challenge.git*
+- Clone this repository by: *git clone https://github.com/irakozej/COA-TASKFORCE_take-home-challenge.git*
 - Install the necessary tools to run and interact with HTML, CSS and javascript.
 - Dive into the desired directory by cd ./path/to/th/directory.
 - Start running.
