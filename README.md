@@ -16,7 +16,7 @@ some information about them.
 In this challenge, we take an array and check it consists of a subarray that sums up to the speciefied target.
 If there is: we return TRUE, otherwise we return FALSE.
 
-*String Transformation.*
+### String Transformation.
 In this challenge,
 - If the length of the string is divisible by 3, reverse the entire string.
 - If the length of the string is divisible by 5, replace each character with its ASCII code.
