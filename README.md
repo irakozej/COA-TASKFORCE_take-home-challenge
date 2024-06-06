@@ -8,9 +8,9 @@ This is a simple reponsive animal gallery that represents animals and
 some information about them.
 
 ### The Challenges.
-In this part of the project, we have two challenges:
-*- Array Manipulation and
-*- The String Transformation
+# In this part of the project, we have two challenges:
+- Array Manipulation and
+- The String Transformation
 
 ### Array manipulation.
 In this challenge, we take an array and check it consists of a subarray that sums up to the speciefied target.
