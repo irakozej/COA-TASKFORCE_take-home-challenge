@@ -24,6 +24,7 @@ In this challenge,
 
 
 ## How to run these challenges:
-- Clone this repository.
+- Clone this repository from
 - Install the necessary tools to run and interact with HTML, CSS and javascript.
+- Dive into the desired directory by cd ./path/to/th/directory.
 - Start running.
