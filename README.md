@@ -7,8 +7,8 @@
 This is a simple reponsive animal gallery that represents animals and
 some information about them.
 
-### The Challenges.
-# In this part of the project, we have two challenges:
+## The Challenges.
+### In this part of the project, we have two challenges:
 - Array Manipulation and
 - The String Transformation
 
