@@ -1,88 +1,77 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #000;
+  background-color: #161616;
 }
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #000;
-  padding: 10px;
-  box-sizing: border-box;
+  width: 80%;
+  height: 70vh;
+  gap: 4px;
+  margin: auto;
 }
 
 .card {
   position: relative;
-  margin: 10px;
-  color: white;
-  flex: 1 1 20%;
-  min-width: 200px;
-  max-width: 300px;
-}
-
-.card img:hover {
-  transform: scale(1.1);
-  transition: transform 0.5s;
-  opacity: 0.3;
-  transition: opacity 3s;
-  backdrop-filter: blur(50px);
-  z-index: 1;
+  flex: 1;
+  overflow: hidden;
 }
 
 .card img {
   width: 100%;
-  height: auto;
-  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.card:hover img {
+  filter: blur(5px) grayscale(100%);
+  transform: scale(1.1);
 }
 
 .text {
+  font-family: sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-}
-.text a {
-  display: none;
+  bottom: 5%;
+  left: 10%;
 }
 
-.text h2 {
-  margin: 0;
-  font-size: 2em;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.places,
+.know-more-link {
+  font-size: 20px;
 }
 
-.text p {
-  margin: 5px 0 0;
-  font-size: 1em;
+.know-more-link {
+  color: #40acc7;
+  display: block;
+}
+.know-more-link:hover{
+  cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .container {
-    flex-direction: column;
-    height: auto;
+    height: 100vh;
   }
+}
 
+@media (max-width: 842px) {
   .card {
-    width: 90%;
-    max-width: none;
+    flex: 1 1 100%;
   }
 
   .text {
-    position: static;
-    text-align: center;
-    margin-top: -50px;
+    visibility: hidden;
   }
 
-  .text h2 {
-    font-size: 1.2em;
-  }
-
-  .text p {
-    font-size: 0.9em;
+  .container {
+    height: 100vh;
   }
 }

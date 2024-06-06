@@ -1,9 +1,21 @@
-function showTitle(card) {
-  const title = card.querySelector("hiddentext");
-  title.style.display = "block";
-}
+const imageWrapper = document.querySelectorAll(".card");
 
-function hideTitle(card) {
-  const title = card.querySelector("hiddentext");
-  title.style.display = "none";
-}
+imageWrapper.forEach((card) => {
+  const imageText = card.querySelector(".text");
+  const knowMore = document.createElement("a");
+  knowMore.classList.add("know-more-link");
+  knowMore.innerHTML =
+    'Know More  <i class="fa-solid fa-arrow-right-long"></i>';
+  knowMore.style.opacity = 0;
+  knowMore.style.marginTop = "-20px";
+  imageText.appendChild(knowMore);
+
+  card.addEventListener("mouseover", () => {
+    knowMore.style.opacity = "1";
+    knowMore.style.marginTop = "0";
+  });
+  card.addEventListener("mouseout", () => {
+    knowMore.style.opacity = "0";
+    knowMore.style.marginTop = "-20px";
+  });
+});
